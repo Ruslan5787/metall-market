@@ -1,0 +1,171 @@
+@import "../variables";
+
+.requisites {
+  padding-bottom: 125px;
+  position: relative;
+
+  &__top {
+    margin: 0 470px 56px 0;
+  }
+
+  &__section {
+    &-text {
+      max-width: 1144px;
+      color: $additional-text;
+    }
+  }
+
+  &-small__note {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
+.table {
+  tbody,
+  td,
+  tr {
+    border: 1px solid $light-gray;
+  }
+
+  table {
+    max-width: 1144px;
+    width: 100%;
+  }
+
+  &__title,
+  &__text {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    padding: 16px 32px;
+  }
+
+  &__text {
+    font-weight: 400;
+  }
+
+  &__highlightedline {
+    background-color: $background-gray;
+  }
+
+  &__copybtn {
+    float: right;
+    svg {
+      path {
+        transition: stroke 0.3s;
+      }
+    }
+
+    &:hover {
+      svg {
+        path {
+          stroke: $accent;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1440px) {
+  .table {
+    table {
+      max-width: 100%;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .requisites {
+    &__top {
+      margin-right: 0;
+    }
+
+    &-small__note {
+      position: initial;
+      width: 100%;
+      min-width: auto;
+    }
+  }
+
+  .table {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 900px) {
+  .table {
+    &__highlightedline {
+      background-color: white;
+    }
+
+    &__copybtn {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .table {
+    &__highlightedline {
+      background-color: white;
+    }
+
+    &__copybtn {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .requisites {
+    &__top {
+      margin-bottom: 32px;
+    }
+  }
+
+  .table {
+    margin-bottom: 32px;
+
+    &__title,
+    &__text {
+      font-size: 14px;
+      line-height: 20px;
+    }
+
+    &__title {
+      padding: 16px 10px 16px 0;
+    }
+
+    &__text {
+      padding: 16px 0 16px 10px;
+    }
+
+    &__highlightedline {
+      background-color: transparent;
+    }
+
+    &__copybtn {
+      display: none;
+    }
+
+    tbody {
+      :first-child {
+        td {
+          padding-top: 0;
+        }
+      }
+    }
+
+    tbody,
+    td,
+    tr {
+      border: none;
+    }
+    
+    tr {
+      border-bottom: 1px solid $light-gray;
+    }
+  }
+}

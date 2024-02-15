@@ -1,0 +1,216 @@
+@import url("https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css");
+.contacts {
+  margin-bottom: 125px;
+}
+.contacts__breadcrumbs {
+  margin-bottom: 24px;
+}
+.contacts__title {
+  margin-bottom: 56px;
+}
+.contacts__block {
+  max-width: 554px;
+  position: absolute;
+  left: 56px;
+  top: 56px;
+  padding: 56px;
+  background-color: #fff;
+}
+.contacts__block-top {
+  margin-bottom: 80px;
+}
+.contacts__block-title {
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 600;
+  margin-bottom: 32px;
+}
+.contacts__block-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+.contacts__block-info:last-child {
+  margin-bottom: 0;
+}
+.contacts__block-info-wrapper {
+  display: flex;
+  margin-right: 15px;
+}
+.contacts__block-info-wrapper :not(:last-child) {
+  margin-right: 32px;
+}
+.contacts__block-item {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+}
+.contacts__block-item span {
+  color: #818181;
+  margin-top: 4px;
+}
+.contacts__block-phone__copyBtn {
+  width: 56px;
+  height: 56px;
+  padding: 16px;
+  border: 1px solid #D9D9D9;
+  transition: all 0.3s;
+}
+.contacts__block-phone__copyBtn svg path {
+  transition: stroke 0.3s;
+}
+.contacts__block-phone__copyBtn:hover {
+  border-color: #00A55A;
+}
+.contacts__block-phone__copyBtn:hover svg path {
+  stroke: #00A55A;
+}
+.contacts__block-btn {
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 500;
+}
+.contacts__block-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+.contacts__block-bottom :not(:last-child) {
+  margin-right: 24px;
+}
+.contacts__note {
+  max-width: 644px;
+  position: absolute;
+  right: 56px;
+  top: 56px;
+  display: flex;
+  padding: 32px;
+  background-color: white;
+}
+.contacts__note-img {
+  margin-right: 16px;
+  width: 24px;
+  height: 24px;
+  background-size: cover;
+}
+.contacts__note-text {
+  color: #818181;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.map-wrapper {
+  position: relative;
+}
+.map-wrapper#map {
+  width: 100%;
+}
+
+.ymaps-2-1-79-copyright {
+  display: none !important;
+}
+
+[class*=ymaps-2][class*=-ground-pane] {
+  filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
+  filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+}
+
+.ourteam {
+  padding-bottom: 200px;
+}
+.ourteam-swiper-wrapper {
+  align-items: stretch !important;
+  height: auto !important;
+}
+.ourteam__card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.ourteam__top {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.ourteam__info {
+  margin-right: 30px;
+}
+.ourteam__title {
+  margin-bottom: 32px;
+}
+.ourteam__text {
+  max-width: 848px;
+  font-size: 18px;
+  line-height: 28px;
+}
+.ourteam__card-picture {
+  min-height: 404px;
+  height: 100%;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  background-color: #fafafa;
+}
+.ourteam__card-picture img {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.ourteam__card-bottom {
+  border: 1px solid #d9d9d9;
+  border-top: none;
+  padding: 24px 32px;
+}
+.ourteam__card-title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 8px;
+}
+.ourteam__card-subtitle {
+  font-size: 14px;
+  line-height: 20px;
+  color: #818181;
+}
+
+.gallery {
+  margin-bottom: 125px;
+}
+
+.image-slider__image {
+  text-align: center;
+}
+.image-slider__image img {
+  max-width: 100%;
+}
+
+.slider__bottom {
+  display: flex;
+  align-items: center;
+}
+.slider__buttons {
+  display: flex;
+}
+.slider__button {
+  width: 56px;
+  height: 56px;
+  padding: 20px;
+  display: block;
+  border: 1px solid transparent;
+  transition: all 0.3s;
+}
+.slider__button svg path {
+  transition: stroke 0.3s;
+}
+.slider__button:hover {
+  border: 1px solid #00A55A;
+}
+.slider__button:hover svg path {
+  stroke: #00A55A;
+}

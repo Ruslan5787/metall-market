@@ -1,0 +1,161 @@
+@import "variables";
+
+.container {
+  max-width: 1712px;
+  margin: 0 auto;
+  padding: 0 12px;
+}
+
+.section {
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  &__wrapper {
+    margin-right: 30px;
+  }
+
+  &__title {
+    font-size: 56px;
+    line-height: 68px;
+    font-weight: 600;
+    margin-bottom: 32px;
+  }
+
+  &__text {
+    max-width: 848px;
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+
+.breadcrumbs {
+  &__list {
+    display: flex;
+
+    &-item {
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 500;
+      color: $additional-text;
+      cursor: pointer;
+
+      position: relative;
+
+      &._active {
+        color: $main-text;
+        cursor: default;
+      }
+    }
+  }
+
+  :not(:last-child) {
+    margin-right: 48px;
+
+    &::before {
+      content: "—";
+      position: absolute;
+      left: 83px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+.secondary-btn {
+  background-color: $additional;
+  color: $accent;
+  padding: 16px 23px;
+}
+
+.main-btn {
+  background-color: $accent;
+  color: #fff;
+  padding: 16px 23px;
+}
+
+.small__note {
+  background-color: $background-gray;
+  padding: 24px;
+  min-width: 444px;
+
+  &-wrapper {
+    display: flex;
+  }
+
+  &-img {
+    width: 56px;
+    height: 56px;
+    background-color: $additional;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 24px;
+  }
+
+  &-info {
+    text-align: left;
+  }
+
+  &-title {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+
+  &-subtitle {
+    font-size: 16px;
+    line-height: 24px;
+    color: $additional-text;
+  }
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  left: 25px;
+  bottom: 25px;
+}
+
+.modal-content {
+  background-color: $additional;
+  padding: 20px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+@media (max-width: 768px) {
+  .section__title {
+    font-size: 48px;
+    line-height: 58px;
+    margin-bottom: 40px;
+  }
+
+  .small__note {
+    padding: 16px;
+
+    &-img {
+      margin-right: 16px;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .section {
+    &__title {
+      font-size: 32px;
+      line-height: 40px;
+      margin-bottom: 20px;
+    }
+
+    &__text {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+}
+

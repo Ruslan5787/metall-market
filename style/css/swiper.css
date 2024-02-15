@@ -1,0 +1,21 @@
+.swiper-slide {
+  height: auto;
+}
+.swiper-scrollbar.swiper-scrollbar-horizontal {
+  border-radius: 0;
+  background-color: #f2f2f2;
+  left: 0;
+  bottom: 0;
+  height: 8px;
+  width: 100%;
+}
+.swiper-scrollbar-drag {
+  background-color: #00A55A;
+  border-radius: 0;
+}
+
+@media (max-width: 500px) {
+  .swiper-scrollbar.swiper-scrollbar-horizontal {
+    height: 4px;
+  }
+}

@@ -1,0 +1,136 @@
+@charset "UTF-8";
+.container {
+  max-width: 1712px;
+  margin: 0 auto;
+  padding: 0 12px;
+}
+
+.section__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.section__wrapper {
+  margin-right: 30px;
+}
+.section__title {
+  font-size: 56px;
+  line-height: 68px;
+  font-weight: 600;
+  margin-bottom: 32px;
+}
+.section__text {
+  max-width: 848px;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.breadcrumbs__list {
+  display: flex;
+}
+.breadcrumbs__list-item {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  color: #818181;
+  cursor: pointer;
+  position: relative;
+}
+.breadcrumbs__list-item._active {
+  color: #282828;
+  cursor: default;
+}
+.breadcrumbs :not(:last-child) {
+  margin-right: 48px;
+}
+.breadcrumbs :not(:last-child)::before {
+  content: "—";
+  position: absolute;
+  left: 83px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.secondary-btn {
+  background-color: #E5F6EE;
+  color: #00A55A;
+  padding: 16px 23px;
+}
+
+.main-btn {
+  background-color: #00A55A;
+  color: #fff;
+  padding: 16px 23px;
+}
+
+.small__note {
+  background-color: #FAFAFA;
+  padding: 24px;
+  min-width: 444px;
+}
+.small__note-wrapper {
+  display: flex;
+}
+.small__note-img {
+  width: 56px;
+  height: 56px;
+  background-color: #E5F6EE;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 24px;
+}
+.small__note-info {
+  text-align: left;
+}
+.small__note-title {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+.small__note-subtitle {
+  font-size: 16px;
+  line-height: 24px;
+  color: #818181;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  left: 25px;
+  bottom: 25px;
+}
+
+.modal-content {
+  background-color: #E5F6EE;
+  padding: 20px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+@media (max-width: 768px) {
+  .section__title {
+    font-size: 48px;
+    line-height: 58px;
+    margin-bottom: 40px;
+  }
+  .small__note {
+    padding: 16px;
+  }
+  .small__note-img {
+    margin-right: 16px;
+  }
+}
+@media (max-width: 500px) {
+  .section__title {
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 20px;
+  }
+  .section__text {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}

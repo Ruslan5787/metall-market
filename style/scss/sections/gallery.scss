@@ -1,0 +1,102 @@
+@import "../variables";
+
+.gallery {
+  margin-bottom: 125px;
+
+  &-slider__slide {
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &-swiper {
+    margin-bottom: 30px;
+
+    &-scrollbar {
+      &.swiper-scrollbar-horizontal {
+        margin-right: 64px;
+        position: relative;
+      }
+    }
+  }
+}
+
+.image-slider__image {
+  text-align: center;
+
+  img {
+    max-width: 100%;
+  }
+}
+
+.slider {
+  &__bottom {
+    display: flex;
+    align-items: center;
+  }
+
+  &__buttons {
+    display: flex;
+  }
+
+  &__button {
+    width: 56px;
+    height: 56px;
+    padding: 20px;
+    border: 1px solid transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+
+    svg {
+      path {
+        transition: stroke 0.3s;
+      }
+    }
+
+    &:hover {
+      border: 1px solid $accent;
+
+      svg {
+        path {
+          stroke: $accent;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery {
+    margin-bottom: 100px;
+
+    &-swiper {
+      &-scrollbar {
+        &.swiper-scrollbar-horizontal {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  .slider {
+    &__buttons {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .gallery {
+    margin-bottom: 64px;
+
+    &-swiper {
+      margin-bottom: 24px;
+    }
+  }
+}
